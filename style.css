@@ -1071,9 +1071,10 @@ img {
     font-size: 1.05rem;
 }
 
-/* --- CTA BANNER --- */
+/* --- CTA BANNER (CLEAN ELEVATED SPACING ABOVE FOOTER) --- */
 .cta-banner-section {
-    margin-top: -30px;
+    margin-top: 50px;
+    margin-bottom: 60px;
     position: relative;
     z-index: 10;
 }
@@ -1081,13 +1082,13 @@ img {
 .cta-banner {
     background: var(--color-primary);
     border-radius: var(--radius-lg);
-    padding: 30px 40px;
+    padding: 35px 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     justify-content: space-between;
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 15px 35px rgba(5, 92, 117, 0.25);
 }
 
 @media (min-width: 768px) {
@@ -1255,8 +1256,9 @@ img {
 .site-footer {
     background: #022935;
     color: var(--color-white);
-    padding: 40px 0 20px;
+    padding: 50px 0 25px;
     text-align: center;
+    margin-top: 30px;
 }
 
 .footer-brand {
