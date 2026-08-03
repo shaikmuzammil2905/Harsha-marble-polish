@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Showcase Gallery | Harsha Marble Polishing Service</title>
+    <meta name="description" content="View our portfolio of 15 high-gloss marble polishing, mirror finish, and floor restoration projects. Call +91 63034 15748.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP HEADER -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-emblem"><span class="logo-letter">H</span></div>
+                <div class="logo-text">
+                    <span class="brand-title">HARSHA</span>
+                    <span class="brand-subtitle">MARBLE POLISHING SERVICE</span>
+                </div>
+            </a>
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-quote-nav" onclick="openQuoteModal()">Get a Quote</button>
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE OVERLAY -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <div class="mobile-nav-content">
+            <button class="close-mobile-nav" id="closeMobileNav">&times;</button>
+            <div class="mobile-logo">
+                <div class="logo-emblem"><span>H</span></div>
+                <div class="logo-text">
+                    <span class="brand-title">HARSHA</span>
+                    <span class="brand-subtitle">MARBLE POLISHING SERVICE</span>
+                </div>
+            </div>
+            <div class="mobile-links">
+                <a href="index.html" class="mobile-link" onclick="closeMobileMenu()">Home</a>
+                <a href="services.html" class="mobile-link" onclick="closeMobileMenu()">Services</a>
+                <a href="gallery.html" class="mobile-link active" onclick="closeMobileMenu()">Gallery</a>
+                <a href="about.html" class="mobile-link" onclick="closeMobileMenu()">About Us</a>
+                <a href="contact.html" class="mobile-link" onclick="closeMobileMenu()">Contact Us</a>
+            </div>
+            <a href="tel:6303415748" class="btn btn-primary btn-block mt-4"><i class="fa-solid fa-phone"></i> Call +91 63034 15748</a>
+        </div>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-banner bg-light">
+        <div class="container text-center">
+            <h1 class="page-title">Project Portfolio Gallery</h1>
+            <p class="page-subtitle">Click any box to inspect high-resolution photos in lightbox popup view</p>
+        </div>
+    </section>
+
+    <!-- GALLERY GRID (15 Dedicated Boxes) -->
+    <section class="gallery-section section-padding">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item reveal-up" onclick="openLightbox(0)"><div class="gallery-img-wrapper"><img src="images/gallery-1.png" alt="Italian Marble Polish"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Italian Marble Polish</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(1)"><div class="gallery-img-wrapper"><img src="images/gallery-2.png" alt="Mirror Finish Floor"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Mirror Finish Floor</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(2)"><div class="gallery-img-wrapper"><img src="images/gallery-3.png" alt="Living Room Marble"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Living Room Marble</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(3)"><div class="gallery-img-wrapper"><img src="images/gallery-4.png" alt="Staircase Polishing"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Staircase Polishing</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(4)"><div class="gallery-img-wrapper"><img src="images/gallery-5.png" alt="Commercial Hall Floor"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Commercial Hall Floor</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(5)"><div class="gallery-img-wrapper"><img src="images/gallery-6.png" alt="Granite Gloss Restoration"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Granite Gloss Restoration</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(6)"><div class="gallery-img-wrapper"><img src="images/gallery-7.png" alt="Diamond Polish Finish"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Diamond Polish Finish</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(7)"><div class="gallery-img-wrapper"><img src="images/gallery-8.png" alt="Villa Flooring Shine"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Villa Flooring Shine</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(8)"><div class="gallery-img-wrapper"><img src="images/gallery-9.png" alt="Seamless Joint Grinding"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Seamless Joint Grinding</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(9)"><div class="gallery-img-wrapper"><img src="images/gallery-10.png" alt="White Marble Shine"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>White Marble Shine</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(10)"><div class="gallery-img-wrapper"><img src="images/gallery-11.png" alt="High Gloss Buffing"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>High Gloss Buffing</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(11)"><div class="gallery-img-wrapper"><img src="images/gallery-12.png" alt="Stain Protection Coating"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Stain Protection Coating</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(12)"><div class="gallery-img-wrapper"><img src="images/gallery-13.png" alt="Katni Marble Restoration"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Katni Marble Restoration</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(13)"><div class="gallery-img-wrapper"><img src="images/gallery-14.png" alt="Lobby Floor Polish"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Lobby Floor Polish</span></div></div></div></div>
+                <div class="gallery-item reveal-up" onclick="openLightbox(14)"><div class="gallery-img-wrapper"><img src="images/gallery-15.png" alt="Reflective Marble Care"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Reflective Marble Care</span></div></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-emblem"><span>H</span></div>
+                <span class="brand-title">HARSHA MARBLE POLISHING SERVICE</span>
+                <p>Restoring beauty, shine, and elegance to your marble floors.</p>
+            </div>
+            <div class="footer-copy"><p>&copy; 2026 Harsha Marble Polishing Service. All Rights Reserved. Contact: +91 63034 15748</p></div>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE BOTTOM BAR -->
+    <nav class="mobile-bottom-bar">
+        <a href="index.html" class="bottom-nav-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="services.html" class="bottom-nav-item"><i class="fa-solid fa-border-all"></i><span>Services</span></a>
+        <a href="tel:6303415748" class="bottom-nav-item call-action-circle" aria-label="Call Now"><div class="orange-phone-bubble"><i class="fa-solid fa-phone"></i></div></a>
+        <a href="gallery.html" class="bottom-nav-item active"><i class="fa-solid fa-image"></i><span>Gallery</span></a>
+        <a href="contact.html" class="bottom-nav-item"><i class="fa-solid fa-user"></i><span>Contact</span></a>
+    </nav>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightboxOnOverlay(event)">
+        <div class="lightbox-modal">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <button class="lightbox-nav lightbox-prev" onclick="prevLightboxImage()"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="lightbox-nav lightbox-next" onclick="nextLightboxImage()"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="lightbox-image-container"><img src="" id="lightboxImg" alt="Gallery View"></div>
+            <div class="lightbox-caption" id="lightboxCaption"><span id="lightboxTitle">Project Photo</span><span id="lightboxCounter">1 / 15</span></div>
+        </div>
+    </div>
+
+    <!-- QUOTE MODAL POPUP -->
+    <div class="modal-overlay" id="quoteModalOverlay" onclick="closeQuoteModalOnOverlay(event)">
+        <div class="modal-card">
+            <button class="modal-close-btn" onclick="closeQuoteModal()">&times;</button>
+            <div class="modal-header">
+                <div class="logo-emblem sm"><span>H</span></div>
+                <h3>Get A Free Quote</h3>
+                <p>Fill in your details below and send directly to our expert via WhatsApp</p>
+            </div>
+            <form id="modalQuoteForm" onsubmit="handleModalFormSubmit(event)">
+                <div class="form-group"><label for="modalName">Name *</label><input type="text" id="modalName" class="form-input" placeholder="Your Name" required></div>
+                <div class="form-group"><label for="modalPhone">Phone Number *</label><input type="tel" id="modalPhone" class="form-input" placeholder="10-Digit Mobile Number" pattern="[0-9]{10}" required></div>
+                <div class="form-group"><label for="modalService">Service Required</label>
+                    <select id="modalService" class="form-input">
+                        <option value="Marble Polishing">Marble Polishing</option>
+                        <option value="Marble Grinding">Marble Grinding</option>
+                        <option value="Stain Removal">Stain Removal</option>
+                        <option value="Marble Protection">Marble Protection</option>
+                        <option value="Floor Restoration">Floor Restoration</option>
+                    </select>
+                </div>
+                <div class="form-group"><label for="modalLocation">Location</label><input type="text" id="modalLocation" class="form-input" placeholder="Your Location / Area"></div>
+                <button type="submit" class="btn btn-form-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

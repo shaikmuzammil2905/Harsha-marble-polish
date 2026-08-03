@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Harsha Marble Polishing Service</title>
+    <meta name="description" content="Contact Harsha Marble Polishing Service for free inspection and instant quote on WhatsApp at +91 63034 15748.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP HEADER -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-emblem"><span class="logo-letter">H</span></div>
+                <div class="logo-text">
+                    <span class="brand-title">HARSHA</span>
+                    <span class="brand-subtitle">MARBLE POLISHING SERVICE</span>
+                </div>
+            </a>
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-quote-nav" onclick="openQuoteModal()">Get a Quote</button>
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE OVERLAY -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <div class="mobile-nav-content">
+            <button class="close-mobile-nav" id="closeMobileNav">&times;</button>
+            <div class="mobile-logo">
+                <div class="logo-emblem"><span>H</span></div>
+                <div class="logo-text">
+                    <span class="brand-title">HARSHA</span>
+                    <span class="brand-subtitle">MARBLE POLISHING SERVICE</span>
+                </div>
+            </div>
+            <div class="mobile-links">
+                <a href="index.html" class="mobile-link" onclick="closeMobileMenu()">Home</a>
+                <a href="services.html" class="mobile-link" onclick="closeMobileMenu()">Services</a>
+                <a href="gallery.html" class="mobile-link" onclick="closeMobileMenu()">Gallery</a>
+                <a href="about.html" class="mobile-link" onclick="closeMobileMenu()">About Us</a>
+                <a href="contact.html" class="mobile-link active" onclick="closeMobileMenu()">Contact Us</a>
+            </div>
+            <a href="tel:6303415748" class="btn btn-primary btn-block mt-4"><i class="fa-solid fa-phone"></i> Call +91 63034 15748</a>
+        </div>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-banner bg-light">
+        <div class="container text-center">
+            <h1 class="page-title">Contact & Free Inspection</h1>
+            <p class="page-subtitle">Fill out the form below or chat directly with our expert on WhatsApp (+91 63034 15748)</p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="contact-section section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <span class="sub-heading-orange">GET IN TOUCH</span>
+                    <h2 class="contact-heading">Schedule Your Free Marble Inspection Today</h2>
+                    <p class="contact-desc">
+                        Have questions or need an instant estimate for your marble, granite, or tile floor? Fill out the form or reach us directly on WhatsApp & Phone!
+                    </p>
+
+                    <div class="info-list">
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-details">
+                                <span>Call / WhatsApp Us</span>
+                                <a href="https://wa.me/916303415748" target="_blank" class="info-link">+91 63034 15748</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="info-details">
+                                <span>Working Hours</span>
+                                <strong>Mon - Sun: 8:00 AM - 9:00 PM</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-details">
+                                <span>Service Coverage</span>
+                                <strong>Citywide & Surrounding Areas</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Direct Customer Inquiry Form -->
+                <div class="contact-form-wrapper reveal-right">
+                    <form id="directQuoteForm" onsubmit="handleFormSubmit(event)">
+                        <h3 class="form-title">Request Inspection</h3>
+
+                        <div class="form-group">
+                            <label for="custName"><i class="fa-solid fa-user"></i> Your Name *</label>
+                            <input type="text" id="custName" class="form-input" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="custPhone"><i class="fa-solid fa-mobile-screen-button"></i> Mobile Number *</label>
+                            <input type="tel" id="custPhone" class="form-input" placeholder="Enter your 10-digit number" pattern="[0-9]{10}" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="custService"><i class="fa-solid fa-list-check"></i> Required Service</label>
+                            <select id="custService" class="form-input">
+                                <option value="Marble Polishing">Marble Polishing</option>
+                                <option value="Marble Grinding">Marble Grinding</option>
+                                <option value="Stain Removal">Stain Removal</option>
+                                <option value="Marble Protection">Marble Protection</option>
+                                <option value="Floor Restoration">Floor Restoration</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="custLocation"><i class="fa-solid fa-location-arrow"></i> Your Location / Area</label>
+                            <input type="text" id="custLocation" class="form-input" placeholder="e.g. Jubilee Hills, Gachibowli">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="custNotes"><i class="fa-solid fa-comment-dots"></i> Additional Requirements</label>
+                            <textarea id="custNotes" class="form-input" rows="3" placeholder="Tell us about your floor condition or total area (sq ft)"></textarea>
+                        </div>
+
+                        <!-- Strict Submit Button -->
+                        <button type="submit" class="btn btn-form-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-emblem"><span>H</span></div>
+                <span class="brand-title">HARSHA MARBLE POLISHING SERVICE</span>
+                <p>Restoring beauty, shine, and elegance to your marble floors.</p>
+            </div>
+            <div class="footer-copy"><p>&copy; 2026 Harsha Marble Polishing Service. All Rights Reserved. Contact: +91 63034 15748</p></div>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE BOTTOM BAR -->
+    <nav class="mobile-bottom-bar">
+        <a href="index.html" class="bottom-nav-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="services.html" class="bottom-nav-item"><i class="fa-solid fa-border-all"></i><span>Services</span></a>
+        <a href="tel:6303415748" class="bottom-nav-item call-action-circle" aria-label="Call Now"><div class="orange-phone-bubble"><i class="fa-solid fa-phone"></i></div></a>
+        <a href="gallery.html" class="bottom-nav-item"><i class="fa-solid fa-image"></i><span>Gallery</span></a>
+        <a href="contact.html" class="bottom-nav-item active"><i class="fa-solid fa-user"></i><span>Contact</span></a>
+    </nav>
+
+    <!-- QUOTE MODAL POPUP -->
+    <div class="modal-overlay" id="quoteModalOverlay" onclick="closeQuoteModalOnOverlay(event)">
+        <div class="modal-card">
+            <button class="modal-close-btn" onclick="closeQuoteModal()">&times;</button>
+            <div class="modal-header">
+                <div class="logo-emblem sm"><span>H</span></div>
+                <h3>Get A Free Quote</h3>
+                <p>Fill in your details below and send directly to our expert via WhatsApp</p>
+            </div>
+            <form id="modalQuoteForm" onsubmit="handleModalFormSubmit(event)">
+                <div class="form-group"><label for="modalName">Name *</label><input type="text" id="modalName" class="form-input" placeholder="Your Name" required></div>
+                <div class="form-group"><label for="modalPhone">Phone Number *</label><input type="tel" id="modalPhone" class="form-input" placeholder="10-Digit Mobile Number" pattern="[0-9]{10}" required></div>
+                <div class="form-group"><label for="modalService">Service Required</label>
+                    <select id="modalService" class="form-input">
+                        <option value="Marble Polishing">Marble Polishing</option>
+                        <option value="Marble Grinding">Marble Grinding</option>
+                        <option value="Stain Removal">Stain Removal</option>
+                        <option value="Marble Protection">Marble Protection</option>
+                        <option value="Floor Restoration">Floor Restoration</option>
+                    </select>
+                </div>
+                <div class="form-group"><label for="modalLocation">Location</label><input type="text" id="modalLocation" class="form-input" placeholder="Your Location / Area"></div>
+                <button type="submit" class="btn btn-form-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

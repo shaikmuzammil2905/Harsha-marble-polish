@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Harsha Marble Polishing Service</title>
+    <meta name="description" content="Learn about Harsha Marble Polishing Service - 10+ years of excellence in restoring beauty and mirror shine to marble floors. Call +91 63034 15748.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP HEADER -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-emblem"><span class="logo-letter">H</span></div>
+                <div class="logo-text">
+                    <span class="brand-title">HARSHA</span>
+                    <span class="brand-subtitle">MARBLE POLISHING SERVICE</span>
+                </div>
+            </a>
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="about.html" class="nav-link active">About Us</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-quote-nav" onclick="openQuoteModal()">Get a Quote</button>
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE OVERLAY -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <div class="mobile-nav-content">
+            <button class="close-mobile-nav" id="closeMobileNav">&times;</button>
+            <div class="mobile-logo">
+                <div class="logo-emblem"><span>H</span></div>
+                <div class="logo-text">
+                    <span class="brand-title">HARSHA</span>
+                    <span class="brand-subtitle">MARBLE POLISHING SERVICE</span>
+                </div>
+            </div>
+            <div class="mobile-links">
+                <a href="index.html" class="mobile-link" onclick="closeMobileMenu()">Home</a>
+                <a href="services.html" class="mobile-link" onclick="closeMobileMenu()">Services</a>
+                <a href="gallery.html" class="mobile-link" onclick="closeMobileMenu()">Gallery</a>
+                <a href="about.html" class="mobile-link active" onclick="closeMobileMenu()">About Us</a>
+                <a href="contact.html" class="mobile-link" onclick="closeMobileMenu()">Contact Us</a>
+            </div>
+            <a href="tel:6303415748" class="btn btn-primary btn-block mt-4"><i class="fa-solid fa-phone"></i> Call +91 63034 15748</a>
+        </div>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-banner bg-light">
+        <div class="container text-center">
+            <h1 class="page-title">About Harsha Marble Polishing</h1>
+            <p class="page-subtitle">Dedicated to delivering long-lasting mirror shine & premium marble care</p>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section section-padding">
+        <div class="container about-container">
+            <div class="about-image-col reveal-left">
+                <div class="about-img-frame">
+                    <img src="images/about-us.png" alt="Polished Hallway" class="about-img">
+                    <div class="frame-border"></div>
+                </div>
+            </div>
+            <div class="about-content-col reveal-right">
+                <span class="sub-heading-orange">ABOUT US</span>
+                <div class="heading-underline"></div>
+                <h2 class="about-title">We Bring Out the Best in Your Marble</h2>
+                <p class="about-text">
+                    Harsha Marble Polishing Service is dedicated to delivering exceptional marble care solutions. With advanced heavy-duty diamond grinding machinery, eco-friendly sealant materials, and skilled experts, we ensure your marble looks as good as new.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight-point"><i class="fa-solid fa-circle-check"></i> Advanced Silvo & Italian Diamond Polish Systems</div>
+                    <div class="highlight-point"><i class="fa-solid fa-circle-check"></i> Dust-free & Low Noise Polish Process</div>
+                    <div class="highlight-point"><i class="fa-solid fa-circle-check"></i> Residential Villas, Apartments & Commercial Buildings</div>
+                    <div class="highlight-point"><i class="fa-solid fa-circle-check"></i> 100% Customer Satisfaction Guarantee</div>
+                </div>
+                <a href="contact.html" class="btn btn-hero-quote mt-3"><span>BOOK INSPECTION NOW</span><div class="arrow-circle"><i class="fa-solid fa-chevron-right"></i></div></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS COUNTER -->
+    <section class="stats-section section-padding">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal-up" data-delay="100"><div class="stat-number-wrapper"><span class="counter" data-target="10">0</span><span class="stat-plus">+</span></div><span class="stat-label">Years Experience</span></div>
+                <div class="stat-card reveal-up" data-delay="200"><div class="stat-number-wrapper"><span class="counter" data-target="2500">0</span><span class="stat-plus">+</span></div><span class="stat-label">Projects Completed</span></div>
+                <div class="stat-card reveal-up" data-delay="300"><div class="stat-number-wrapper"><span class="counter" data-target="1800">0</span><span class="stat-plus">+</span></div><span class="stat-label">Happy Clients</span></div>
+                <div class="stat-card reveal-up" data-delay="400"><div class="stat-number-wrapper"><span class="counter" data-target="100">0</span><span class="stat-percent">%</span></div><span class="stat-label">Satisfaction Rate</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-emblem"><span>H</span></div>
+                <span class="brand-title">HARSHA MARBLE POLISHING SERVICE</span>
+                <p>Restoring beauty, shine, and elegance to your marble floors.</p>
+            </div>
+            <div class="footer-copy"><p>&copy; 2026 Harsha Marble Polishing Service. All Rights Reserved. Contact: +91 63034 15748</p></div>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE BOTTOM BAR -->
+    <nav class="mobile-bottom-bar">
+        <a href="index.html" class="bottom-nav-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="services.html" class="bottom-nav-item"><i class="fa-solid fa-border-all"></i><span>Services</span></a>
+        <a href="tel:6303415748" class="bottom-nav-item call-action-circle" aria-label="Call Now"><div class="orange-phone-bubble"><i class="fa-solid fa-phone"></i></div></a>
+        <a href="gallery.html" class="bottom-nav-item"><i class="fa-solid fa-image"></i><span>Gallery</span></a>
+        <a href="contact.html" class="bottom-nav-item"><i class="fa-solid fa-user"></i><span>Contact</span></a>
+    </nav>
+
+    <!-- QUOTE MODAL POPUP -->
+    <div class="modal-overlay" id="quoteModalOverlay" onclick="closeQuoteModalOnOverlay(event)">
+        <div class="modal-card">
+            <button class="modal-close-btn" onclick="closeQuoteModal()">&times;</button>
+            <div class="modal-header">
+                <div class="logo-emblem sm"><span>H</span></div>
+                <h3>Get A Free Quote</h3>
+                <p>Fill in your details below and send directly to our expert via WhatsApp</p>
+            </div>
+            <form id="modalQuoteForm" onsubmit="handleModalFormSubmit(event)">
+                <div class="form-group"><label for="modalName">Name *</label><input type="text" id="modalName" class="form-input" placeholder="Your Name" required></div>
+                <div class="form-group"><label for="modalPhone">Phone Number *</label><input type="tel" id="modalPhone" class="form-input" placeholder="10-Digit Mobile Number" pattern="[0-9]{10}" required></div>
+                <div class="form-group"><label for="modalService">Service Required</label>
+                    <select id="modalService" class="form-input">
+                        <option value="Marble Polishing">Marble Polishing</option>
+                        <option value="Marble Grinding">Marble Grinding</option>
+                        <option value="Stain Removal">Stain Removal</option>
+                        <option value="Marble Protection">Marble Protection</option>
+                        <option value="Floor Restoration">Floor Restoration</option>
+                    </select>
+                </div>
+                <div class="form-group"><label for="modalLocation">Location</label><input type="text" id="modalLocation" class="form-input" placeholder="Your Location / Area"></div>
+                <button type="submit" class="btn btn-form-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

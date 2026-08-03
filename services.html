@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Harsha Marble Polishing Service</title>
+    <meta name="description" content="Explore our expert marble polishing, grinding, stain removal, nano-protection, and floor restoration services. Call +91 63034 15748.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP HEADER -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-emblem"><span class="logo-letter">H</span></div>
+                <div class="logo-text">
+                    <span class="brand-title">HARSHA</span>
+                    <span class="brand-subtitle">MARBLE POLISHING SERVICE</span>
+                </div>
+            </a>
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-quote-nav" onclick="openQuoteModal()">Get a Quote</button>
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE OVERLAY -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <div class="mobile-nav-content">
+            <button class="close-mobile-nav" id="closeMobileNav">&times;</button>
+            <div class="mobile-logo">
+                <div class="logo-emblem"><span>H</span></div>
+                <div class="logo-text">
+                    <span class="brand-title">HARSHA</span>
+                    <span class="brand-subtitle">MARBLE POLISHING SERVICE</span>
+                </div>
+            </div>
+            <div class="mobile-links">
+                <a href="index.html" class="mobile-link" onclick="closeMobileMenu()">Home</a>
+                <a href="services.html" class="mobile-link active" onclick="closeMobileMenu()">Services</a>
+                <a href="gallery.html" class="mobile-link" onclick="closeMobileMenu()">Gallery</a>
+                <a href="about.html" class="mobile-link" onclick="closeMobileMenu()">About Us</a>
+                <a href="contact.html" class="mobile-link" onclick="closeMobileMenu()">Contact Us</a>
+            </div>
+            <a href="tel:6303415748" class="btn btn-primary btn-block mt-4"><i class="fa-solid fa-phone"></i> Call +91 63034 15748</a>
+        </div>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-banner bg-light">
+        <div class="container text-center">
+            <h1 class="page-title">Our Specialized Services</h1>
+            <p class="page-subtitle">Premium floor restoration, Italian marble diamond polishing, and stain protection</p>
+        </div>
+    </section>
+
+    <!-- SERVICES DETAILED SECTION -->
+    <section class="services-section section-padding">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card reveal-up">
+                    <div class="service-icon-wrapper icon-teal"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3 class="service-title">Marble Polishing</h3>
+                    <div class="card-accent-line"></div>
+                    <p class="service-desc">High-gloss diamond polishing for Italian marble, Katni, Kota, and granite floors with mirror reflection.</p>
+                    <button class="btn btn-hero-quote mt-3" onclick="openQuoteModal('Marble Polishing')"><span>Book Service</span><div class="arrow-circle"><i class="fa-solid fa-chevron-right"></i></div></button>
+                </div>
+
+                <div class="service-card reveal-up">
+                    <div class="service-icon-wrapper icon-orange"><i class="fa-solid fa-gear"></i></div>
+                    <h3 class="service-title">Marble Grinding</h3>
+                    <div class="card-accent-line"></div>
+                    <p class="service-desc">Heavy grinding to remove lippage, deep scratches, uneven joints, and surface rough spots seamlessly.</p>
+                    <button class="btn btn-hero-quote mt-3" onclick="openQuoteModal('Marble Grinding')"><span>Book Service</span><div class="arrow-circle"><i class="fa-solid fa-chevron-right"></i></div></button>
+                </div>
+
+                <div class="service-card reveal-up">
+                    <div class="service-icon-wrapper icon-teal"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h3 class="service-title">Stain Removal</h3>
+                    <div class="card-accent-line"></div>
+                    <p class="service-desc">Specialized chemical treatment for stubborn oil, rust, acid stains, and yellowing discoloration.</p>
+                    <button class="btn btn-hero-quote mt-3" onclick="openQuoteModal('Stain Removal')"><span>Book Service</span><div class="arrow-circle"><i class="fa-solid fa-chevron-right"></i></div></button>
+                </div>
+
+                <div class="service-card reveal-up">
+                    <div class="service-icon-wrapper icon-orange"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="service-title">Marble Protection</h3>
+                    <div class="card-accent-line"></div>
+                    <p class="service-desc">Nano-sealant and crystal coat application to guard against future stains, spills, and moisture damage.</p>
+                    <button class="btn btn-hero-quote mt-3" onclick="openQuoteModal('Marble Protection')"><span>Book Service</span><div class="arrow-circle"><i class="fa-solid fa-chevron-right"></i></div></button>
+                </div>
+
+                <div class="service-card reveal-up">
+                    <div class="service-icon-wrapper icon-teal"><i class="fa-solid fa-stairs"></i></div>
+                    <h3 class="service-title">Floor Restoration</h3>
+                    <div class="card-accent-line"></div>
+                    <p class="service-desc">Complete revitalisation of dull, worn-out marble floors bringing back mirror reflections and durability.</p>
+                    <button class="btn btn-hero-quote mt-3" onclick="openQuoteModal('Floor Restoration')"><span>Book Service</span><div class="arrow-circle"><i class="fa-solid fa-chevron-right"></i></div></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo-emblem"><span>H</span></div>
+                <span class="brand-title">HARSHA MARBLE POLISHING SERVICE</span>
+                <p>Restoring beauty, shine, and elegance to your marble floors.</p>
+            </div>
+            <div class="footer-copy"><p>&copy; 2026 Harsha Marble Polishing Service. All Rights Reserved. Contact: +91 63034 15748</p></div>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE BOTTOM BAR -->
+    <nav class="mobile-bottom-bar">
+        <a href="index.html" class="bottom-nav-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="services.html" class="bottom-nav-item active"><i class="fa-solid fa-border-all"></i><span>Services</span></a>
+        <a href="tel:6303415748" class="bottom-nav-item call-action-circle" aria-label="Call Now"><div class="orange-phone-bubble"><i class="fa-solid fa-phone"></i></div></a>
+        <a href="gallery.html" class="bottom-nav-item"><i class="fa-solid fa-image"></i><span>Gallery</span></a>
+        <a href="contact.html" class="bottom-nav-item"><i class="fa-solid fa-user"></i><span>Contact</span></a>
+    </nav>
+
+    <!-- QUOTE MODAL POPUP -->
+    <div class="modal-overlay" id="quoteModalOverlay" onclick="closeQuoteModalOnOverlay(event)">
+        <div class="modal-card">
+            <button class="modal-close-btn" onclick="closeQuoteModal()">&times;</button>
+            <div class="modal-header">
+                <div class="logo-emblem sm"><span>H</span></div>
+                <h3>Get A Free Quote</h3>
+                <p>Fill in your details below and send directly to our expert via WhatsApp</p>
+            </div>
+            <form id="modalQuoteForm" onsubmit="handleModalFormSubmit(event)">
+                <div class="form-group"><label for="modalName">Name *</label><input type="text" id="modalName" class="form-input" placeholder="Your Name" required></div>
+                <div class="form-group"><label for="modalPhone">Phone Number *</label><input type="tel" id="modalPhone" class="form-input" placeholder="10-Digit Mobile Number" pattern="[0-9]{10}" required></div>
+                <div class="form-group"><label for="modalService">Service Required</label>
+                    <select id="modalService" class="form-input">
+                        <option value="Marble Polishing">Marble Polishing</option>
+                        <option value="Marble Grinding">Marble Grinding</option>
+                        <option value="Stain Removal">Stain Removal</option>
+                        <option value="Marble Protection">Marble Protection</option>
+                        <option value="Floor Restoration">Floor Restoration</option>
+                    </select>
+                </div>
+                <div class="form-group"><label for="modalLocation">Location</label><input type="text" id="modalLocation" class="form-input" placeholder="Your Location / Area"></div>
+                <button type="submit" class="btn btn-form-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

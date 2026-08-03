@@ -23,7 +23,7 @@
     <header class="site-header" id="siteHeader">
         <div class="container header-container">
             <!-- Brand Logo -->
-            <a href="#home" class="brand-logo">
+            <a href="index.html" class="brand-logo">
                 <div class="logo-emblem">
                     <span class="logo-letter">H</span>
                 </div>
@@ -35,11 +35,11 @@
 
             <!-- Desktop Navigation -->
             <nav class="desktop-nav">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#about" class="nav-link">About Us</a>
-                <a href="#contact" class="nav-link">Contact Us</a>
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
             </nav>
 
             <!-- Action / Mobile Toggle -->
@@ -64,11 +64,11 @@
                 </div>
             </div>
             <div class="mobile-links">
-                <a href="#home" class="mobile-link" onclick="closeMobileMenu()">Home</a>
-                <a href="#services" class="mobile-link" onclick="closeMobileMenu()">Services</a>
-                <a href="#gallery" class="mobile-link" onclick="closeMobileMenu()">Gallery</a>
-                <a href="#about" class="mobile-link" onclick="closeMobileMenu()">About Us</a>
-                <a href="#contact" class="mobile-link" onclick="closeMobileMenu()">Contact Us</a>
+                <a href="index.html" class="mobile-link active" onclick="closeMobileMenu()">Home</a>
+                <a href="services.html" class="mobile-link" onclick="closeMobileMenu()">Services</a>
+                <a href="gallery.html" class="mobile-link" onclick="closeMobileMenu()">Gallery</a>
+                <a href="about.html" class="mobile-link" onclick="closeMobileMenu()">About Us</a>
+                <a href="contact.html" class="mobile-link" onclick="closeMobileMenu()">Contact Us</a>
             </div>
             <a href="tel:6303415748" class="btn btn-primary btn-block mt-4">
                 <i class="fa-solid fa-phone"></i> Call +91 63034 15748
@@ -78,7 +78,7 @@
 
     <!-- MAIN CONTENT -->
     <main>
-        <!-- HERO SECTION -->
+        <!-- HERO SECTION WITH ANIMATED MACHINE VISUAL -->
         <section class="hero-section" id="home">
             <div class="container hero-container">
                 <div class="hero-content reveal-left">
@@ -100,9 +100,10 @@
                 </div>
 
                 <div class="hero-visual reveal-right">
-                    <div class="visual-card">
-                        <img src="images/hero-machine.png" alt="Harsha Marble Polishing Machine" class="hero-img">
-                        <div class="experience-badge">
+                    <div class="visual-card animated-hero-card">
+                        <div class="shine-sweep-overlay"></div>
+                        <img src="images/hero-machine.png" alt="Harsha Marble Polishing Machine" class="hero-img animated-hero-img">
+                        <div class="experience-badge animated-badge">
                             <span class="badge-num">10+</span>
                             <span class="badge-txt">Years of Excellence</span>
                         </div>
@@ -182,7 +183,7 @@
             </div>
         </section>
 
-        <!-- WHY CHOOSE US SECTION -->
+        <!-- WHY CHOOSE US SECTION WITH EXACT CIRCULAR ICONS -->
         <section class="why-choose-section section-padding bg-light">
             <div class="container">
                 <div class="section-header text-center reveal-up">
@@ -195,7 +196,7 @@
 
                 <div class="why-choose-box reveal-up">
                     <div class="why-item">
-                        <div class="why-icon">
+                        <div class="why-icon icon-circle-teal">
                             <i class="fa-solid fa-award"></i>
                         </div>
                         <h4>Experienced Professionals</h4>
@@ -203,7 +204,7 @@
                     <div class="why-divider"></div>
 
                     <div class="why-item">
-                        <div class="why-icon">
+                        <div class="why-icon icon-circle-blue">
                             <i class="fa-solid fa-shield-check"></i>
                         </div>
                         <h4>Premium Quality Materials</h4>
@@ -211,7 +212,7 @@
                     <div class="why-divider"></div>
 
                     <div class="why-item">
-                        <div class="why-icon">
+                        <div class="why-icon icon-circle-teal">
                             <i class="fa-solid fa-clock-rotate-left"></i>
                         </div>
                         <h4>Timely & Reliable Service</h4>
@@ -219,8 +220,8 @@
                     <div class="why-divider"></div>
 
                     <div class="why-item">
-                        <div class="why-icon">
-                            <i class="fa-solid fa-user-check"></i>
+                        <div class="why-icon icon-circle-orange">
+                            <i class="fa-solid fa-star"></i>
                         </div>
                         <h4>100% Customer Satisfaction</h4>
                     </div>
@@ -256,7 +257,7 @@
                             <i class="fa-solid fa-circle-check"></i> Residential & Commercial Projects
                         </div>
                     </div>
-                    <a href="#contact" class="btn-learn-more">
+                    <a href="about.html" class="btn-learn-more">
                         LEARN MORE <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
@@ -631,11 +632,11 @@
 
     <!-- STICKY MOBILE BOTTOM NAVIGATION BAR -->
     <nav class="mobile-bottom-bar">
-        <a href="#home" class="bottom-nav-item active">
+        <a href="index.html" class="bottom-nav-item active">
             <i class="fa-solid fa-house"></i>
             <span>Home</span>
         </a>
-        <a href="#services" class="bottom-nav-item">
+        <a href="services.html" class="bottom-nav-item">
             <i class="fa-solid fa-border-all"></i>
             <span>Services</span>
         </a>
@@ -644,11 +645,11 @@
                 <i class="fa-solid fa-phone"></i>
             </div>
         </a>
-        <a href="#gallery" class="bottom-nav-item">
+        <a href="gallery.html" class="bottom-nav-item">
             <i class="fa-solid fa-image"></i>
             <span>Gallery</span>
         </a>
-        <a href="#contact" class="bottom-nav-item">
+        <a href="contact.html" class="bottom-nav-item">
             <i class="fa-solid fa-user"></i>
             <span>Contact</span>
         </a>
