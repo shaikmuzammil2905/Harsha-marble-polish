@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 90" width="100%" height="100%">
+  <defs>
+    <!-- Gold Gradient -->
+    <linearGradient id="goldGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD685"/>
+      <stop offset="50%" stop-color="#E58319"/>
+      <stop offset="100%" stop-color="#D47712"/>
+    </linearGradient>
+    
+    <!-- Marble Texture Gradient -->
+    <linearGradient id="marbleGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- EMBLEM SYMBOL -->
+  <g transform="translate(10, 5)">
+    <!-- Swirl Ring -->
+    <path d="M 40,5 A 36,36 0 1,1 12,62" fill="none" stroke="url(#goldGradLight)" stroke-width="4.5" stroke-linecap="round"/>
+    
+    <!-- Star Sparkle -->
+    <path d="M 68,12 Q 72,12 72,8 Q 72,12 76,12 Q 72,12 72,16 Q 72,12 68,12 Z" fill="#FFD685"/>
+
+    <!-- Left Stem of H (Marble) -->
+    <path d="M 24,20 C 18,32 16,48 26,65 C 28,68 32,66 30,62 C 22,48 24,34 30,22 Z" fill="url(#marbleGradLight)"/>
+
+    <!-- Right Stem of H (Gold) -->
+    <path d="M 52,22 L 52,62 M 32,42 L 52,42" fill="none" stroke="url(#goldGradLight)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- LOGO TEXT -->
+  <g transform="translate(95, 20)">
+    <!-- HARSHA -->
+    <text x="0" y="32" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="34" fill="#E58319" letter-spacing="2">HARSHA</text>
+    <!-- MARBLE POLISHING SERVICE (White text for dark background) -->
+    <text x="0" y="54" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" fill="#FFFFFF" letter-spacing="2.5">MARBLE POLISHING SERVICE</text>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 90" width="100%" height="100%">
+  <defs>
+    <!-- Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5C065"/>
+      <stop offset="50%" stop-color="#E58319"/>
+      <stop offset="100%" stop-color="#B86200"/>
+    </linearGradient>
+    
+    <!-- Marble Texture Pattern simulation -->
+    <linearGradient id="marbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#E2E8F0"/>
+      <stop offset="70%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+    
+    <!-- Soft Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#E58319" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- EMBLEM SYMBOL -->
+  <g transform="translate(10, 5)">
+    <!-- Swirl Ring Outer Circle -->
+    <path d="M 40,5 A 36,36 0 1,1 12,62" fill="none" stroke="url(#goldGrad)" stroke-width="4.5" stroke-linecap="round" filter="url(#glow)"/>
+    
+    <!-- Star Sparkle at Top Right -->
+    <path d="M 68,12 Q 72,12 72,8 Q 72,12 76,12 Q 72,12 72,16 Q 72,12 68,12 Z" fill="#F5C065"/>
+
+    <!-- Left Stem of H (Marble texture stylized) -->
+    <path d="M 24,20 C 18,32 16,48 26,65 C 28,68 32,66 30,62 C 22,48 24,34 30,22 Z" fill="url(#marbleGrad)"/>
+    <path d="M 28,22 Q 22,42 28,62" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.6"/>
+
+    <!-- Right Stem of H (Golden) -->
+    <path d="M 52,22 L 52,62 M 32,42 L 52,42" fill="none" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- LOGO TEXT -->
+  <g transform="translate(95, 20)">
+    <!-- HARSHA -->
+    <text x="0" y="32" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="34" fill="#E58319" letter-spacing="2">HARSHA</text>
+    <!-- MARBLE POLISHING SERVICE -->
+    <text x="0" y="54" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" fill="#055C75" letter-spacing="2.5">MARBLE POLISHING SERVICE</text>
+  </g>
+</svg>
