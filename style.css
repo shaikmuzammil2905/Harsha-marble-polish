@@ -94,6 +94,10 @@ img {
 .mt-3 { margin-top: 1rem; }
 .mt-4 { margin-top: 1.5rem; }
 
+.text-shadow-subtle {
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.8);
+}
+
 /* --- PAGE BANNER FOR SEPARATE PAGES --- */
 .page-banner {
     padding: 50px 0 35px;
@@ -442,8 +446,28 @@ img {
     font-size: 1.1rem;
     color: var(--color-text-muted);
     max-width: 500px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     line-height: 1.6;
+}
+
+.hero-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.hero-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--color-primary-dark);
+}
+
+.hero-feature-item i {
+    color: var(--color-accent);
 }
 
 .hero-visual {
@@ -591,7 +615,7 @@ img {
 
 @media (min-width: 1024px) {
     .services-grid {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -671,7 +695,7 @@ img {
     color: var(--color-accent);
 }
 
-/* --- WHY CHOOSE US WITH DISTINCT CIRCULAR ICONS --- */
+/* --- WHY CHOOSE US WITH ALL 3 SIDE DIVIDERS --- */
 .why-choose-box {
     background: var(--color-white);
     border-radius: var(--radius-lg);
@@ -685,8 +709,9 @@ img {
 
 @media (min-width: 768px) {
     .why-choose-box {
-        grid-template-columns: repeat(4, 1fr);
-        padding: 30px 15px;
+        grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+        padding: 30px 20px;
+        align-items: center;
     }
 }
 
@@ -750,13 +775,13 @@ img {
     .why-divider {
         display: block;
         width: 1px;
-        background: #E2E8F0;
-        height: 80%;
+        background: #CBD5E1;
+        height: 70px;
         align-self: center;
     }
 }
 
-/* --- ABOUT SECTION --- */
+/* --- ABOUT SECTION & INTERACTIVE ZOOM PHOTO --- */
 .about-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -775,6 +800,39 @@ img {
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
+}
+
+.interactive-pop-frame {
+    cursor: pointer;
+}
+
+.zoom-hover-img {
+    transition: transform 0.6s ease;
+}
+
+.interactive-pop-frame:hover .zoom-hover-img {
+    transform: scale(1.06);
+}
+
+.click-zoom-badge {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(5, 92, 117, 0.85);
+    backdrop-filter: blur(4px);
+    color: var(--color-white);
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: var(--transition-fast);
+}
+
+.interactive-pop-frame:hover .click-zoom-badge {
+    background: var(--color-accent);
 }
 
 .about-img {

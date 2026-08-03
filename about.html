@@ -59,13 +59,16 @@
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT SECTION WITH POPUP INTERACTIVE PHOTO (image copy 27.png) -->
     <section class="about-section section-padding">
         <div class="container about-container">
             <div class="about-image-col reveal-left">
-                <div class="about-img-frame">
-                    <img src="images/about-us-hd.png" alt="Polished Hallway HD" class="about-img">
+                <div class="about-img-frame interactive-pop-frame" onclick="openSingleImageModal('images/about-polishing-hd.jpg', 'Expert Marble Polishing Technician in Action')">
+                    <img src="images/about-polishing-hd.jpg" alt="Expert Marble Polishing Technician" class="about-img zoom-hover-img">
                     <div class="frame-border"></div>
+                    <div class="click-zoom-badge">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i> Click to Enlarge
+                    </div>
                 </div>
             </div>
             <div class="about-content-col reveal-right">
@@ -82,6 +85,41 @@
                     <div class="highlight-point"><i class="fa-solid fa-circle-check"></i> 100% Customer Satisfaction Guarantee</div>
                 </div>
                 <a href="contact.html" class="btn btn-hero-quote mt-3"><span>BOOK INSPECTION NOW</span><div class="arrow-circle"><i class="fa-solid fa-chevron-right"></i></div></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US WITH ALL 3 DIVIDERS -->
+    <section class="why-choose-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <div class="section-badge">
+                    <span class="badge-line"></span>
+                    <span class="section-tag">WHY CHOOSE US?</span>
+                    <span class="badge-line"></span>
+                </div>
+            </div>
+
+            <div class="why-choose-box reveal-up">
+                <div class="why-item">
+                    <div class="why-icon icon-circle-teal"><i class="fa-solid fa-award"></i></div>
+                    <h4>Experienced Professionals</h4>
+                </div>
+                <div class="why-divider"></div>
+                <div class="why-item">
+                    <div class="why-icon icon-circle-blue"><i class="fa-solid fa-gem"></i></div>
+                    <h4>Premium Quality Materials</h4>
+                </div>
+                <div class="why-divider"></div>
+                <div class="why-item">
+                    <div class="why-icon icon-circle-teal"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    <h4>Timely & Reliable Service</h4>
+                </div>
+                <div class="why-divider"></div>
+                <div class="why-item">
+                    <div class="why-icon icon-circle-orange"><i class="fa-solid fa-star"></i></div>
+                    <h4>100% Customer Satisfaction</h4>
+                </div>
             </div>
         </div>
     </section>
@@ -117,6 +155,17 @@
         <a href="gallery.html" class="bottom-nav-item"><i class="fa-solid fa-image"></i><span>Gallery</span></a>
         <a href="contact.html" class="bottom-nav-item"><i class="fa-solid fa-user"></i><span>Contact</span></a>
     </nav>
+
+    <!-- LIGHTBOX MODAL FOR SINGLE IMAGE POPUP -->
+    <div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightboxOnOverlay(event)">
+        <div class="lightbox-modal">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <button class="lightbox-nav lightbox-prev" onclick="prevLightboxImage()"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="lightbox-nav lightbox-next" onclick="nextLightboxImage()"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="lightbox-image-container"><img src="" id="lightboxImg" alt="Popup View"></div>
+            <div class="lightbox-caption" id="lightboxCaption"><span id="lightboxTitle">Image View</span><span id="lightboxCounter"></span></div>
+        </div>
+    </div>
 
     <!-- QUOTE MODAL POPUP -->
     <div class="modal-overlay" id="quoteModalOverlay" onclick="closeQuoteModalOnOverlay(event)">

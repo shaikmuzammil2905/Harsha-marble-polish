@@ -68,18 +68,32 @@
 
     <!-- MAIN CONTENT -->
     <main>
-        <!-- HERO SECTION -->
+        <!-- HERO SECTION WITH NEW HD TECHNICIAN VISUAL (image copy 22.png) -->
         <section class="hero-section" id="home">
             <div class="container hero-container">
                 <div class="hero-content reveal-left">
-                    <h1 class="hero-title">
+                    <h1 class="hero-title text-shadow-subtle">
                         SHINE THAT <span class="text-highlight">LASTS</span>
                         <div class="title-underline"></div>
                     </h1>
-                    <p class="hero-description">
-                        Professional marble polishing services that restore beauty, enhance shine, and last for years.
+                    <p class="hero-description text-shadow-subtle">
+                        Professional marble polishing services that restore beauty, enhance shine, and last for years. We specialize in Italian marble, Katni, Kota, and granite floor restoration.
                     </p>
-                    <div class="hero-cta-wrapper">
+
+                    <!-- Expanded Hero Feature Highlights -->
+                    <div class="hero-features-list">
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-circle-check"></i> <span>Mirror Finish Diamond Polishing</span>
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-circle-check"></i> <span>100% Stain & Scratch Elimination</span>
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-circle-check"></i> <span>Dust-Free & Low Noise Process</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta-wrapper mt-4">
                         <button class="btn btn-hero-quote" onclick="openQuoteModal()">
                             <span>GET A FREE QUOTE</span>
                             <div class="arrow-circle">
@@ -92,7 +106,7 @@
                 <div class="hero-visual reveal-right">
                     <div class="visual-card animated-hero-card">
                         <div class="shine-sweep-overlay"></div>
-                        <img src="images/hero-machine-hd.png" alt="Harsha Marble Polishing Machine" class="hero-img animated-hero-img">
+                        <img src="images/hero-technician-hd.png" alt="Harsha Marble Polishing Expert Technician" class="hero-img animated-hero-img">
                         <div class="experience-badge animated-badge">
                             <span class="badge-num">10+</span>
                             <span class="badge-txt">Years of Excellence</span>
@@ -102,7 +116,7 @@
             </div>
         </section>
 
-        <!-- OUR SERVICES SUMMARY HIGHLIGHTS -->
+        <!-- OUR SERVICES PREVIEW -->
         <section class="services-section section-padding" id="services">
             <div class="container">
                 <div class="section-header text-center reveal-up">
@@ -148,28 +162,6 @@
                         <p class="service-desc">Specialized chemical treatment for stubborn oil, rust, acid stains, and yellowing discoloration.</p>
                         <button class="service-btn" onclick="openQuoteModal('Stain Removal')">Book Now <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
-
-                    <!-- Service 4 -->
-                    <div class="service-card reveal-up" data-delay="400">
-                        <div class="service-icon-wrapper icon-orange">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <h3 class="service-title">Marble Protection</h3>
-                        <div class="card-accent-line"></div>
-                        <p class="service-desc">Nano-sealant and crystal coat application to guard against future stains and moisture damage.</p>
-                        <button class="service-btn" onclick="openQuoteModal('Marble Protection')">Book Now <i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
-
-                    <!-- Service 5 -->
-                    <div class="service-card reveal-up" data-delay="500">
-                        <div class="service-icon-wrapper icon-teal">
-                            <i class="fa-solid fa-stairs"></i>
-                        </div>
-                        <h3 class="service-title">Floor Restoration</h3>
-                        <div class="card-accent-line"></div>
-                        <p class="service-desc">Complete revitalisation of dull, worn-out marble floors bringing back mirror reflections.</p>
-                        <button class="service-btn" onclick="openQuoteModal('Floor Restoration')">Book Now <i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
                 </div>
 
                 <div class="text-center mt-4">
@@ -181,7 +173,7 @@
             </div>
         </section>
 
-        <!-- WHY CHOOSE US SECTION WITH PREMIUM CIRCULAR ICONS -->
+        <!-- WHY CHOOSE US SECTION WITH ALL 3 SIDE DIVIDERS (image copy 25.png) -->
         <section class="why-choose-section section-padding bg-light">
             <div class="container">
                 <div class="section-header text-center reveal-up">
@@ -199,6 +191,7 @@
                         </div>
                         <h4>Experienced Professionals</h4>
                     </div>
+                    
                     <div class="why-divider"></div>
 
                     <div class="why-item">
@@ -207,6 +200,7 @@
                         </div>
                         <h4>Premium Quality Materials</h4>
                     </div>
+
                     <div class="why-divider"></div>
 
                     <div class="why-item">
@@ -215,6 +209,7 @@
                         </div>
                         <h4>Timely & Reliable Service</h4>
                     </div>
+
                     <div class="why-divider"></div>
 
                     <div class="why-item">
@@ -227,13 +222,16 @@
             </div>
         </section>
 
-        <!-- ABOUT US OVERVIEW -->
+        <!-- ABOUT US OVERVIEW WITH NEW HD POLISHING VISUAL (image copy 27.png) -->
         <section class="about-section section-padding" id="about">
             <div class="container about-container">
                 <div class="about-image-col reveal-left">
-                    <div class="about-img-frame">
-                        <img src="images/about-us-hd.png" alt="Harsha Marble Polished Hallway HD" class="about-img">
+                    <div class="about-img-frame interactive-pop-frame" onclick="openSingleImageModal('images/about-polishing-hd.jpg', 'Expert Marble Polishing Technician in Action')">
+                        <img src="images/about-polishing-hd.jpg" alt="Expert Marble Polishing Technician" class="about-img zoom-hover-img">
                         <div class="frame-border"></div>
+                        <div class="click-zoom-badge">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> Click to Enlarge
+                        </div>
                     </div>
                 </div>
 
@@ -242,7 +240,7 @@
                     <div class="heading-underline"></div>
                     <h2 class="about-title">We Bring Out the Best in Your Marble</h2>
                     <p class="about-text">
-                        Harsha Marble Polishing Service is dedicated to delivering exceptional marble care solutions. With advanced equipment and skilled experts, we ensure your marble looks as good as new.
+                        Harsha Marble Polishing Service is dedicated to delivering exceptional marble care solutions. With advanced heavy-duty diamond grinding machinery and skilled experts, we ensure your marble looks as good as new.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight-point">
@@ -455,7 +453,7 @@
         </div>
     </div>
 
-    <!-- LIGHTBOX MODAL FOR GALLERY IMAGES -->
+    <!-- LIGHTBOX MODAL FOR GALLERY & ABOUT IMAGE POPUP -->
     <div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightboxOnOverlay(event)">
         <div class="lightbox-modal">
             <button class="lightbox-close" onclick="closeLightbox()">&times;</button>

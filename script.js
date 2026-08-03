@@ -135,6 +135,30 @@ function openLightbox(index) {
     title.textContent = galleryData[currentLightboxIndex].title;
     counter.textContent = `${currentLightboxIndex + 1} / ${galleryData.length}`;
 
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
+    if (prevBtn) prevBtn.style.display = 'flex';
+    if (nextBtn) nextBtn.style.display = 'flex';
+
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function openSingleImageModal(imageSrc, imageTitle) {
+    const overlay = document.getElementById('lightboxOverlay');
+    const img = document.getElementById('lightboxImg');
+    const title = document.getElementById('lightboxTitle');
+    const counter = document.getElementById('lightboxCounter');
+
+    img.src = imageSrc;
+    title.textContent = imageTitle;
+    counter.textContent = '';
+
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
+    if (prevBtn) prevBtn.style.display = 'none';
+    if (nextBtn) nextBtn.style.display = 'none';
+
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
 }
@@ -241,24 +265,13 @@ function initScrollAnimations() {
 
 // --- BOTTOM NAV HIGHLIGHTING ON SCROLL ---
 function initBottomNavScroll() {
-    const sections = document.querySelectorAll('section[id]');
-    const navItems = document.querySelectorAll('.bottom-nav-item[href^="#"]');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navItems = document.querySelectorAll('.bottom-nav-item');
 
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 150;
-            const sectionHeight = section.offsetHeight;
-            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navItems.forEach(item => {
-            item.classList.remove('active');
-            if (item.getAttribute('href') === `#${current}`) {
-                item.classList.add('active');
-            }
-        });
+    navItems.forEach(item => {
+        const href = item.getAttribute('href');
+        if (href === currentPage) {
+            item.classList.add('active');
+        }
     });
 }
