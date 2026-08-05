@@ -542,27 +542,42 @@ img {
 .hero-slide-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(10, 40, 50, 0.85) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(6, 30, 38, 0.88) 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 16px;
+    padding: 14px 16px 32px 16px;
     color: #FFFFFF;
     transition: background 0.3s ease;
+    z-index: 2;
+}
+
+@media (max-width: 767px) {
+    .hero-slide-overlay {
+        padding: 10px 12px 28px 12px;
+    }
 }
 
 .hero-slide-tag {
     align-self: flex-start;
-    background: rgba(230, 126, 34, 0.9);
+    background: rgba(230, 126, 34, 0.95);
     color: #FFFFFF;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 700;
-    padding: 3px 10px;
+    padding: 3px 9px;
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin-bottom: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin-bottom: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 576px) {
+    .hero-slide-tag {
+        font-size: 0.6rem;
+        padding: 2px 7px;
+        margin-bottom: 3px;
+    }
 }
 
 .hero-slide-title {
@@ -571,17 +586,33 @@ img {
     font-weight: 700;
     color: #FFFFFF;
     margin: 0 0 4px 0;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    line-height: 1.25;
+    white-space: normal;
+    word-break: break-word;
+}
+
+@media (max-width: 576px) {
+    .hero-slide-title {
+        font-size: 0.92rem;
+        margin-bottom: 2px;
+    }
 }
 
 .zoom-hint-badge {
     font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.9);
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    opacity: 0.9;
+    opacity: 0.95;
     transition: opacity 0.3s ease;
+}
+
+@media (max-width: 576px) {
+    .zoom-hint-badge {
+        font-size: 0.68rem;
+    }
 }
 
 .hero-slide-item:hover .zoom-hint-badge {
@@ -625,10 +656,10 @@ img {
         font-size: 0.9rem;
     }
     .hero-slider-prev {
-        left: -10px;
+        left: -8px;
     }
     .hero-slider-next {
-        right: -10px;
+        right: -8px;
     }
 }
 
@@ -647,7 +678,7 @@ img {
 /* HERO SLIDER CONTROLS (DOTS & COUNTER) */
 .hero-slider-controls {
     position: absolute;
-    bottom: 12px;
+    bottom: 8px;
     left: 14px;
     z-index: 5;
     display: flex;
@@ -689,6 +720,13 @@ img {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     letter-spacing: 0.5px;
+}
+
+/* HIDE SLIDE COUNTER (1/10) ON MOBILE VIEW AS REQUESTED */
+@media (max-width: 767px) {
+    .hero-slide-counter {
+        display: none !important;
+    }
 }
 
 /* ANIMATED HERO CARD EFFECTS */
@@ -743,7 +781,18 @@ img {
     flex-direction: column;
     align-items: center;
     border-left: 3px solid var(--color-accent);
-    z-index: 3;
+    z-index: 4;
+}
+
+/* MOBILE REPOSITIONING FOR EXPERIENCE BADGE TO PREVENT OVERLAPPING BOTTOM TEXT */
+@media (max-width: 767px) {
+    .experience-badge {
+        top: 8px;
+        right: 8px;
+        bottom: auto;
+        padding: 4px 8px;
+        border-radius: 6px;
+    }
 }
 
 @media (min-width: 768px) {
