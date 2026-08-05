@@ -104,12 +104,123 @@
                 </div>
 
                 <div class="hero-visual reveal-right">
-                    <div class="visual-card animated-hero-card">
-                        <div class="shine-sweep-overlay"></div>
-                        <img src="images/hero-technician-hd.png" alt="Harsha Marble Polishing Expert Technician" class="hero-img animated-hero-img">
-                        <div class="experience-badge animated-badge">
-                            <span class="badge-num">10+</span>
-                            <span class="badge-txt">Years of Excellence</span>
+                    <div class="hero-slider-wrapper" id="heroSliderWrapper">
+                        <!-- Side-to-Side Navigation Buttons -->
+                        <button class="hero-slider-nav hero-slider-prev" id="heroPrevBtn" aria-label="Previous Slide">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="hero-slider-nav hero-slider-next" id="heroNextBtn" aria-label="Next Slide">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                        <!-- Hero Slider Card Container -->
+                        <div class="hero-slider-card animated-hero-card">
+                            <div class="shine-sweep-overlay"></div>
+                            
+                            <div class="hero-slider-track" id="heroSliderTrack">
+                                <!-- Slide 1 -->
+                                <div class="hero-slide-item active" onclick="openHeroLightbox(0)">
+                                    <img src="images/hero-technician-hd.png" alt="Italian Marble Polishing Masterclass" class="hero-slide-img">
+                                    <div class="hero-slide-overlay">
+                                        <span class="hero-slide-tag"><i class="fa-solid fa-sparkles"></i> Diamond Polish</span>
+                                        <h4 class="hero-slide-title">Italian Marble Mirror Polish</h4>
+                                        <div class="zoom-hint-badge"><i class="fa-solid fa-expand"></i> Tap to View Details</div>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="hero-slide-item" onclick="openHeroLightbox(1)">
+                                    <img src="images/gallery-1.png" alt="Mirror Finish Italian Marble Floor" class="hero-slide-img">
+                                    <div class="hero-slide-overlay">
+                                        <span class="hero-slide-tag"><i class="fa-solid fa-gem"></i> Mirror Shine</span>
+                                        <h4 class="hero-slide-title">High Gloss Living Room Marble</h4>
+                                        <div class="zoom-hint-badge"><i class="fa-solid fa-expand"></i> Tap to View Details</div>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="hero-slide-item" onclick="openHeroLightbox(2)">
+                                    <img src="images/gallery-2.png" alt="Living Room Marble Gloss Restoration" class="hero-slide-img">
+                                    <div class="hero-slide-overlay">
+                                        <span class="hero-slide-tag"><i class="fa-solid fa-star"></i> Floor Care</span>
+                                        <h4 class="hero-slide-title">Premium Katni Floor Restoration</h4>
+                                        <div class="zoom-hint-badge"><i class="fa-solid fa-expand"></i> Tap to View Details</div>
+                                    </div>
+                                </div>
+                                <!-- Slide 4 -->
+                                <div class="hero-slide-item" onclick="openHeroLightbox(3)">
+                                    <img src="images/gallery-3.png" alt="Staircase Marble Polishing" class="hero-slide-img">
+                                    <div class="hero-slide-overlay">
+                                        <span class="hero-slide-tag"><i class="fa-solid fa-stairs"></i> Steps & Stairs</span>
+                                        <h4 class="hero-slide-title">Precision Staircase Polishing</h4>
+                                        <div class="zoom-hint-badge"><i class="fa-solid fa-expand"></i> Tap to View Details</div>
+                                    </div>
+                                </div>
+                                <!-- Slide 5 -->
+                                <div class="hero-slide-item" onclick="openHeroLightbox(4)">
+                                    <img src="images/gallery-4.png" alt="Commercial Hall Floor Polishing" class="hero-slide-img">
+                                    <div class="hero-slide-overlay">
+                                        <span class="hero-slide-tag"><i class="fa-solid fa-building"></i> Commercial</span>
+                                        <h4 class="hero-slide-title">Commercial Hall Gloss Finish</h4>
+                                        <div class="zoom-hint-badge"><i class="fa-solid fa-expand"></i> Tap to View Details</div>
+                                    </div>
+                                </div>
+                                <!-- Slide 6 -->
+                                <div class="hero-slide-item" onclick="openHeroLightbox(5)">
+                                    <img src="images/gallery-5.png" alt="Granite Gloss Restoration" class="hero-slide-img">
+                                    <div class="hero-slide-overlay">
+                                        <span class="hero-slide-tag"><i class="fa-solid fa-layer-group"></i> Granite Care</span>
+                                        <h4 class="hero-slide-title">Granite Floor Diamond Buffing</h4>
+                                        <div class="zoom-hint-badge"><i class="fa-solid fa-expand"></i> Tap to View Details</div>
+                                    </div>
+                                </div>
+                                <!-- Slide 7 -->
+                                <div class="hero-slide-item" onclick="openHeroLightbox(6)">
+                                    <img src="images/gallery-6.png" alt="Diamond Polish Finish" class="hero-slide-img">
+                                    <div class="hero-slide-overlay">
+                                        <span class="hero-slide-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Deep Polish</span>
+                                        <h4 class="hero-slide-title">Seamless Joint Grinding</h4>
+                                        <div class="zoom-hint-badge"><i class="fa-solid fa-expand"></i> Tap to View Details</div>
+                                    </div>
+                                </div>
+                                <!-- Slide 8 -->
+                                <div class="hero-slide-item" onclick="openHeroLightbox(7)">
+                                    <img src="images/gallery-7.png" alt="Villa Flooring Polish" class="hero-slide-img">
+                                    <div class="hero-slide-overlay">
+                                        <span class="hero-slide-tag"><i class="fa-solid fa-house-laptop"></i> Villa Project</span>
+                                        <h4 class="hero-slide-title">Luxury Villa Marble Restoration</h4>
+                                        <div class="zoom-hint-badge"><i class="fa-solid fa-expand"></i> Tap to View Details</div>
+                                    </div>
+                                </div>
+                                <!-- Slide 9 -->
+                                <div class="hero-slide-item" onclick="openHeroLightbox(8)">
+                                    <img src="images/gallery-8.png" alt="Stain Elimination & Shield Coating" class="hero-slide-img">
+                                    <div class="hero-slide-overlay">
+                                        <span class="hero-slide-tag"><i class="fa-solid fa-shield-halved"></i> Protection</span>
+                                        <h4 class="hero-slide-title">Stain Removal & Sealant Shield</h4>
+                                        <div class="zoom-hint-badge"><i class="fa-solid fa-expand"></i> Tap to View Details</div>
+                                    </div>
+                                </div>
+                                <!-- Slide 10 -->
+                                <div class="hero-slide-item" onclick="openHeroLightbox(9)">
+                                    <img src="images/gallery-9.png" alt="Kota Marble Restoration" class="hero-slide-img">
+                                    <div class="hero-slide-overlay">
+                                        <span class="hero-slide-tag"><i class="fa-solid fa-brush"></i> Floor Shine</span>
+                                        <h4 class="hero-slide-title">Kota & Katni Surface Refinishing</h4>
+                                        <div class="zoom-hint-badge"><i class="fa-solid fa-expand"></i> Tap to View Details</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Experience Badge (Fixed Overlay) -->
+                            <div class="experience-badge animated-badge">
+                                <span class="badge-num">10+</span>
+                                <span class="badge-txt">Years of Excellence</span>
+                            </div>
+
+                            <!-- Slider Footer Controls: Dots & Counter -->
+                            <div class="hero-slider-controls">
+                                <div class="hero-slider-dots" id="heroSliderDots"></div>
+                                <div class="hero-slide-counter" id="heroSlideCounter">1 / 10</div>
+                            </div>
                         </div>
                     </div>
                 </div>
