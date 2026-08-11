@@ -14,6 +14,10 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Kursor Red Dot Custom Cursor -->
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <script src="https://unpkg.com/kursor"></script>
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -76,6 +80,11 @@
                         SHINE THAT <span class="text-highlight">LASTS</span>
                         <div class="title-underline"></div>
                     </h1>
+                    <div class="mt-2 mb-3">
+                        <div class="rotating-text-box">
+                            <span class="rotating-text" id="rotatingTextDynamic">Advanced Diamond Polishing Technology</span>
+                        </div>
+                    </div>
                     <p class="hero-description text-shadow-subtle">
                         Professional marble polishing services that restore beauty, enhance shine, and last for years. We specialize in Italian marble, Katni, Kota, and granite floor restoration.
                     </p>
@@ -406,6 +415,77 @@
             </div>
         </section>
 
+        <!-- COMPARISON MATRIX: HARSHA MARBLE POLISH VS OTHERS -->
+        <section class="comparison-section section-padding">
+            <div class="container">
+                <div class="section-header text-center reveal-up section-header-relative">
+                    <span class="heading-shadow-text">Harsha Marble Polish</span>
+                    <div class="section-badge">
+                        <span class="badge-line"></span>
+                        <i class="fa-solid fa-scale-balanced accent-star"></i>
+                        <span class="section-tag">WHY WE STAND OUT</span>
+                        <span class="badge-line"></span>
+                    </div>
+                    <h2 class="section-main-title">Harsha Marble Polish VS Local Workers</h2>
+                </div>
+
+                <div class="comparison-grid reveal-zoom">
+                    <!-- Column Headers -->
+                    <div class="comparison-col-header col-header-features">Feature Comparison</div>
+                    <div class="comparison-col-header col-header-harsha">Harsha Marble Polish</div>
+                    <div class="comparison-col-header col-header-others">Local Unskilled Workers</div>
+
+                    <!-- Row 1: Pricing -->
+                    <div class="comparison-cell cell-feature">Pricing & Estimation</div>
+                    <div class="comparison-cell cell-harsha"><i class="fa-solid fa-circle-check"></i> 100% Transparent Price Quote</div>
+                    <div class="comparison-cell cell-others"><i class="fa-solid fa-circle-xmark"></i> "Sir this is just an initial estimate"</div>
+
+                    <!-- Row 2: Delivery -->
+                    <div class="comparison-cell cell-feature">Project Timeline</div>
+                    <div class="comparison-cell cell-harsha"><i class="fa-solid fa-circle-check"></i> Guaranteed On-Time Completion</div>
+                    <div class="comparison-cell cell-others"><i class="fa-solid fa-circle-xmark"></i> Frequent Delays & Unreliable Commitments</div>
+
+                    <!-- Row 3: Tools & Materials -->
+                    <div class="comparison-cell cell-feature">Materials & Equipment</div>
+                    <div class="comparison-cell cell-harsha"><i class="fa-solid fa-circle-check"></i> Italian Diamond Pads & Silvo Polish</div>
+                    <div class="comparison-cell cell-others"><i class="fa-solid fa-circle-xmark"></i> Low-Quality Abrasives & Harsh Chemicals</div>
+
+                    <!-- Row 4: Process -->
+                    <div class="comparison-cell cell-feature">Floor Inspection & Care</div>
+                    <div class="comparison-cell cell-harsha"><i class="fa-solid fa-circle-check"></i> Tailored Polish based on Stone Condition</div>
+                    <div class="comparison-cell cell-others"><i class="fa-solid fa-circle-xmark"></i> Basic Surface Buffing without Inspection</div>
+
+                    <!-- Row 5: Communication -->
+                    <div class="comparison-cell cell-feature">Project Management</div>
+                    <div class="comparison-cell cell-harsha"><i class="fa-solid fa-circle-check"></i> Daily Progress Updates & Dedicated Expert</div>
+                    <div class="comparison-cell cell-others"><i class="fa-solid fa-circle-xmark"></i> Client Has to Repeatedly Follow Up</div>
+
+                    <!-- Row 6: Shine & Warranty -->
+                    <div class="comparison-cell cell-feature">Shine & Protection</div>
+                    <div class="comparison-cell cell-harsha"><i class="fa-solid fa-circle-check"></i> Long-Lasting Mirror Gloss Warranty</div>
+                    <div class="comparison-cell cell-others"><i class="fa-solid fa-circle-xmark"></i> Temporary Shine Fades in Weeks</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AMBIENT VIDEO FEATURE SECTION -->
+        <section class="video-feature-section">
+            <div class="video-bg-overlay"></div>
+            <div class="container video-content-box reveal-rubber">
+                <div class="section-badge mb-3">
+                    <span class="section-tag text-white"><i class="fa-solid fa-sparkles"></i> MASTER RESTORATION</span>
+                </div>
+                <h2>We Polish & Perfect Beyond Your Imagination</h2>
+                <p class="hero-description text-white-80 mb-4">
+                    Transforming dull, scratched, or stained floors into brilliant diamond-mirror surfaces that elevate the beauty of your entire space.
+                </p>
+                <button class="btn btn-hero-quote" onclick="openQuoteModal('Video Banner Special')">
+                    <span>BOOK FREE SITE INSPECTION</span>
+                    <div class="arrow-circle"><i class="fa-solid fa-chevron-right"></i></div>
+                </button>
+            </div>
+        </section>
+
         <!-- GALLERY PREVIEW HIGHLIGHTS -->
         <section class="gallery-section section-padding" id="gallery">
             <div class="container">
@@ -579,6 +659,17 @@
                 <span id="lightboxCounter">1 / 15</span>
             </div>
         </div>
+    </div>
+
+    <!-- FLOATING QUICK ACTIONS (WHATSAPP & CALL) -->
+    <div class="floating-actions-container">
+        <a href="https://wa.me/916303415748?text=Hello%20Harsha%20Marble%20Polishing%20Service!%20I%20would%20like%20to%20enquire%20about%20your%20marble%20polishing%20services." target="_blank" class="floating-btn btn-whatsapp-pulse" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div class="pulse-ring"></div>
+        </a>
+        <a href="tel:6303415748" class="floating-btn btn-call-pulse" aria-label="Call Now">
+            <i class="fa-solid fa-phone"></i>
+        </a>
     </div>
 
     <!-- Custom JS -->

@@ -49,7 +49,62 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileNav();
     initBottomNavScroll();
     initHeroSlider();
+    initKursorCursor();
+    initRotatingHeadlines();
+    initTimedPromoPopup();
 });
+
+// --- KURSOR CUSTOM RED TRAILING CURSOR ---
+function initKursorCursor() {
+    if (window.innerWidth >= 992 && typeof kursor !== 'undefined') {
+        try {
+            new kursor({
+                type: 1,
+                color: '#E2372C',
+                removeDefaultCursor: false
+            });
+        } catch (e) {
+            console.log('Kursor init bypassed:', e);
+        }
+    }
+}
+
+// --- DYNAMIC ROTATING HEADLINE SWITCHER ---
+function initRotatingHeadlines() {
+    const textItems = [
+        "Advanced Diamond Polishing Technology",
+        "100% Mirror Finish Marble Care",
+        "Italian & Kota Marble Restoration",
+        "Stain & Scratch Elimination Experts"
+    ];
+    const targetEl = document.getElementById('rotatingTextDynamic');
+    if (!targetEl) return;
+
+    let index = 0;
+    setInterval(() => {
+        index = (index + 1) % textItems.length;
+        targetEl.style.opacity = '0';
+        targetEl.style.transform = 'translateY(-15px)';
+        setTimeout(() => {
+            targetEl.textContent = textItems[index];
+            targetEl.style.opacity = '1';
+            targetEl.style.transform = 'translateY(0)';
+        }, 300);
+    }, 3000);
+}
+
+// --- TIMED INQUIRY PROMO POPUP (5 SECONDS) ---
+function initTimedPromoPopup() {
+    if (sessionStorage.getItem('promoPopupShown')) return;
+    
+    setTimeout(() => {
+        const modal = document.getElementById('quoteModalOverlay');
+        if (modal && !modal.classList.contains('open')) {
+            openQuoteModal('Instant Consultation');
+            sessionStorage.setItem('promoPopupShown', 'true');
+        }
+    }, 7000);
+}
 
 // --- MOBILE NAVIGATION DRAWER ---
 function initMobileNav() {
@@ -427,7 +482,7 @@ function initStatsCounter() {
 
 // --- SCROLL REVEAL ANIMATIONS ---
 function initScrollAnimations() {
-    const reveals = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+    const reveals = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-zoom, .reveal-rubber');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -435,6 +490,9 @@ function initScrollAnimations() {
                 const delay = entry.target.getAttribute('data-delay') || 0;
                 setTimeout(() => {
                     entry.target.classList.add('reveal-active');
+                    if (entry.target.classList.contains('reveal-rubber')) {
+                        entry.target.classList.add('animate-rubber');
+                    }
                 }, delay);
                 observer.unobserve(entry.target);
             }
