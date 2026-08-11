@@ -2261,13 +2261,3 @@ img {
     100% { transform: scale(1.6); opacity: 0; }
 }
 
-/* --- KURSOR RED DOT CUSTOM CURSOR OVERRIDE --- */
-@media (min-width: 992px) {
-    .kursor {
-        border-color: #E2372C !important;
-    }
-    .kursor--1 {
-        background-color: #E2372C !important;
-    }
-}
-

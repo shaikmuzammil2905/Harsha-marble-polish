@@ -49,25 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileNav();
     initBottomNavScroll();
     initHeroSlider();
-    initKursorCursor();
     initRotatingHeadlines();
     initTimedPromoPopup();
 });
-
-// --- KURSOR CUSTOM RED TRAILING CURSOR ---
-function initKursorCursor() {
-    if (window.innerWidth >= 992 && typeof kursor !== 'undefined') {
-        try {
-            new kursor({
-                type: 1,
-                color: '#E2372C',
-                removeDefaultCursor: false
-            });
-        } catch (e) {
-            console.log('Kursor init bypassed:', e);
-        }
-    }
-}
 
 // --- DYNAMIC ROTATING HEADLINE SWITCHER ---
 function initRotatingHeadlines() {
