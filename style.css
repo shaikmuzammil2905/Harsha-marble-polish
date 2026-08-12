@@ -413,17 +413,17 @@ img {
 .hero-section {
     position: relative;
     padding: 30px 0 25px;
-    background: url('images/hero-bg-polishing.png') center center / cover no-repeat;
+    background: url('images/hero-bg-polishing.png?v=2') center center / cover no-repeat;
     overflow: hidden;
     color: #1E293B;
 }
 
-/* Translucent overlay that lets the rich marble floor shine clearly */
+/* Translucent gradient overlay optimized for mobile & desktop readability with bright marble floor */
 .hero-section::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.15) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.25) 100%);
     pointer-events: none;
     z-index: 1;
 }
@@ -437,12 +437,20 @@ img {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .hero-section {
+        background-position: 70% center;
+        padding: 25px 0 20px;
+    }
+}
+
 @media (min-width: 992px) {
     .hero-section {
         padding: 55px 0 45px;
+        background-position: center center;
     }
     .hero-section::before {
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.15) 100%);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.55) 45%, rgba(255, 255, 255, 0.2) 100%);
     }
     .hero-container {
         grid-template-columns: 1.05fr 0.95fr;
