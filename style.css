@@ -423,7 +423,7 @@ img {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(0, 0, 0, 0.15) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.15) 100%);
     pointer-events: none;
     z-index: 1;
 }
@@ -442,7 +442,7 @@ img {
         padding: 55px 0 45px;
     }
     .hero-section::before {
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 45%, rgba(0, 0, 0, 0.2) 100%);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.15) 100%);
     }
     .hero-container {
         grid-template-columns: 1.05fr 0.95fr;
@@ -450,21 +450,21 @@ img {
     }
 }
 
-/* Glassmorphic card for hero content ensuring 100% text readability while marble background is full visible */
+/* Clean Hero Content - No white popup box background, text floating directly over marble background image */
 .hero-content {
-    background: rgba(255, 255, 255, 0.86);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    padding: 24px 24px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.9);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
 }
 
 @media (max-width: 576px) {
     .hero-content {
-        padding: 18px 16px;
-        border-radius: 16px;
+        padding: 0 4px;
+        border-radius: 0;
     }
 }
 
