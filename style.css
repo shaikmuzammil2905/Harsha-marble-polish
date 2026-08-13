@@ -474,8 +474,8 @@ img {
 .hero-title {
     font-family: var(--font-heading);
     font-size: 2.1rem;
-    font-weight: 800;
-    color: #0A2540;
+    font-weight: 900;
+    color: #000000;
     line-height: 1.15;
     margin-bottom: 10px;
     text-shadow: none;
@@ -483,7 +483,8 @@ img {
 }
 
 .hero-title-navy {
-    color: #0A2540; /* Dark Navy Blue */
+    color: #000000; /* Bold Black */
+    font-weight: 900;
 }
 
 @media (max-width: 576px) {
@@ -505,12 +506,13 @@ img {
 }
 
 .text-highlight {
-    color: #E58319; /* Vibrant Orange */
+    color: #000000; /* Bold Black */
+    font-weight: 900;
     display: inline-block;
     text-shadow: none;
 }
 
-/* Green Subtitle & Underline Line */
+/* Subtitle & Underline Line */
 .hero-subtitle-wrapper {
     margin-bottom: 16px;
 }
@@ -518,8 +520,8 @@ img {
 .hero-subtitle-green {
     font-family: var(--font-heading);
     font-size: 1.1rem;
-    font-weight: 700;
-    color: #487B34; /* Rich Green as in screenshot */
+    font-weight: 900;
+    color: #000000; /* Bold Black */
     display: block;
     margin-bottom: 6px;
     letter-spacing: 0.2px;
@@ -529,21 +531,21 @@ img {
     width: 100%;
     max-width: 280px;
     height: 3px;
-    background: linear-gradient(90deg, #487B34 0%, #E58319 100%);
+    background: linear-gradient(90deg, #000000 0%, #333333 100%);
     border-radius: 2px;
 }
 
 .hero-description {
-    font-size: 0.96rem;
-    color: #334155; /* Slate dark gray */
+    font-size: 0.98rem;
+    color: #000000; /* Bold Black */
     max-width: 520px;
     margin-bottom: 20px;
     line-height: 1.6;
-    font-weight: 500;
+    font-weight: 800; /* Extra bold thick */
     text-shadow: none;
 }
 
-/* Green Circular Badges Feature List */
+/* Circular Badges Feature List */
 .hero-features-list {
     display: flex;
     flex-direction: column;
@@ -555,9 +557,9 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 0.95rem;
-    color: #0F172A;
+    color: #000000;
     background: transparent;
     padding: 2px 0;
     border-radius: 0;
@@ -571,19 +573,19 @@ img {
     width: 34px;
     height: 34px;
     min-width: 34px;
-    background: #487B34; /* Green circle icon badge */
+    background: #000000; /* Black circle icon badge */
     color: #FFFFFF;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.85rem;
-    box-shadow: 0 2px 6px rgba(72, 123, 52, 0.25);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .feature-text {
-    color: #0F172A;
-    font-weight: 700;
+    color: #000000;
+    font-weight: 800;
     font-size: 0.95rem;
 }
 
