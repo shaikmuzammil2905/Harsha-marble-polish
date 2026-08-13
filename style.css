@@ -418,14 +418,9 @@ img {
     color: #1E293B;
 }
 
-/* Translucent gradient overlay optimized for mobile & desktop readability with bright marble floor */
+/* Clear Hero Section Background - No semi-transparent gradient overlays on hero background image */
 .hero-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.25) 100%);
-    pointer-events: none;
-    z-index: 1;
+    display: none;
 }
 
 .hero-container {
@@ -450,7 +445,7 @@ img {
         background-position: center center;
     }
     .hero-section::before {
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.55) 45%, rgba(255, 255, 255, 0.2) 100%);
+        display: none;
     }
     .hero-container {
         grid-template-columns: 1.05fr 0.95fr;
@@ -680,7 +675,7 @@ img {
 .hero-slide-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(4, 22, 30, 0.82) 100%);
+    background: transparent;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -878,16 +873,7 @@ img {
 }
 
 .shine-sweep-overlay {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-    transform: skewX(-25deg);
-    animation: shineSweep 4s ease-in-out infinite;
-    z-index: 2;
-    pointer-events: none;
+    display: none;
 }
 
 @keyframes shineSweep {
