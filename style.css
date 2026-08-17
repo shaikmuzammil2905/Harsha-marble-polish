@@ -2750,9 +2750,9 @@ img {
 /* --- FLOATING WHATSAPP (LEFT) & CALL (RIGHT) PULSE BUTTONS --- */
 .floating-actions-container {
     position: fixed;
-    bottom: 25px;
-    left: 20px;
-    right: 20px;
+    bottom: 88px;
+    left: 16px;
+    right: 16px;
     z-index: 2500;
     display: flex;
     flex-direction: row;
