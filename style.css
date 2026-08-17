@@ -2209,7 +2209,7 @@ img {
     grid-template-columns: 1fr;
     gap: 28px;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -2227,23 +2227,11 @@ img {
     margin-bottom: 12px;
 }
 
-@media (max-width: 767px) {
-    .footer-logo-img {
-        margin: 0 auto 12px;
-    }
-}
-
 .footer-tagline {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.75);
     line-height: 1.55;
     max-width: 380px;
-}
-
-@media (max-width: 767px) {
-    .footer-tagline {
-        margin: 0 auto;
-    }
 }
 
 .footer-heading {
@@ -2268,25 +2256,14 @@ img {
     border-radius: 2px;
 }
 
-@media (max-width: 767px) {
-    .footer-heading::after {
-        margin: 6px auto 0;
-    }
-}
-
 .footer-contact-info p {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 8px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 10px;
-}
-
-@media (max-width: 767px) {
-    .footer-contact-info p {
-        justify-content: center;
-    }
 }
 
 .footer-contact-info a {
@@ -2312,30 +2289,24 @@ img {
     color: #FFFFFF !important;
 }
 
+/* Icon-Only Circular Social Buttons */
 .footer-social-links {
     display: flex;
     gap: 12px;
-    flex-wrap: wrap;
-}
-
-@media (max-width: 767px) {
-    .footer-social-links {
-        justify-content: center;
-    }
+    justify-content: flex-start;
 }
 
 .social-icon-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px 18px;
-    border-radius: var(--radius-full);
-    font-size: 0.88rem;
-    font-weight: 700;
+    justify-content: center;
     color: #FFFFFF;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .instagram-btn {
@@ -2347,12 +2318,12 @@ img {
 }
 
 .social-icon-btn i {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 }
 
 .social-icon-btn:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.38);
     color: #FFFFFF;
 }
 
@@ -2361,7 +2332,13 @@ img {
     color: rgba(255, 255, 255, 0.6);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 18px;
-    text-align: center;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .footer-copy {
+        text-align: center;
+    }
 }
 
 /* --- STICKY MOBILE BOTTOM NAVIGATION BAR --- */
