@@ -2727,27 +2727,49 @@ img {
     color: #FFFFFF;
 }
 
+.video-content-box .hero-description {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(241, 245, 249, 0.92);
+    font-weight: 500;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    font-size: 1.08rem;
+    line-height: 1.65;
+}
+
 @media (max-width: 768px) {
     .video-content-box h2 {
         font-size: 1.6rem;
     }
+    .video-content-box .hero-description {
+        font-size: 0.95rem;
+    }
 }
 
-/* --- FLOATING WHATSAPP & CALL PULSE BUTTONS --- */
+/* --- FLOATING WHATSAPP (LEFT) & CALL (RIGHT) PULSE BUTTONS --- */
 .floating-actions-container {
     position: fixed;
-    bottom: 80px;
+    bottom: 25px;
     left: 20px;
+    right: 20px;
     z-index: 2500;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.floating-actions-container .floating-btn {
+    pointer-events: auto;
 }
 
 @media (min-width: 992px) {
     .floating-actions-container {
         bottom: 25px;
         left: 25px;
+        right: 25px;
     }
 }
 
