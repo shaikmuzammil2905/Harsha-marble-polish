@@ -425,7 +425,7 @@ img {
     display: none;
 }
 
-/* Background Video Styling - High Video Clarity */
+/* Background Video Styling - 100% Full Video Clarity */
 .hero-video-container {
     position: absolute;
     top: 0;
@@ -450,22 +450,9 @@ img {
     opacity: 1;
 }
 
-/* Multi-layer Soft Gradient Overlay: Crystal clear video with subtle light sheen for text readability */
+/* Zero Shadow/Haze Video Overlay - 100% Raw Video Clarity */
 .hero-video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        90deg, 
-        rgba(255, 255, 255, 0.68) 0%, 
-        rgba(255, 255, 255, 0.48) 45%, 
-        rgba(255, 255, 255, 0.20) 78%, 
-        rgba(255, 255, 255, 0) 100%
-    );
-    z-index: 2;
-    pointer-events: none;
+    display: none;
 }
 
 .hero-container {
@@ -482,12 +469,7 @@ img {
         padding: 25px 0 20px;
     }
     .hero-video-overlay {
-        background: linear-gradient(
-            180deg, 
-            rgba(255, 255, 255, 0.75) 0%, 
-            rgba(255, 255, 255, 0.55) 60%, 
-            rgba(255, 255, 255, 0.20) 100%
-        );
+        display: none;
     }
 }
 
