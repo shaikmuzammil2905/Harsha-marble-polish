@@ -7,38 +7,38 @@ const galleryData = [
     { src: 'images/gallery-16.png', title: 'Mirror Finish Italian Marble' },
     { src: 'images/gallery-17.png', title: 'High Gloss Hallway Restoration' },
     { src: 'images/gallery-18.png', title: 'Living Room Marble Buffing' },
-    { src: 'images/gallery-19.png', title: 'Professional Diamond Polishing' },
-    { src: 'images/gallery-20.png', title: 'Staircase Marble Polish' },
+    { src: 'images/gallery-19.png', title: 'Diamond Floor Polishing' },
+    { src: 'images/gallery-20.png', title: 'Precision Staircase Polish' },
     { src: 'images/gallery-21.png', title: 'Katni Marble Gloss Care' },
-    { src: 'images/gallery-22.png', title: 'Diamond Polish Finish' },
-    { src: 'images/gallery-23.png', title: 'Commercial Marble Floor Polish' },
-    { src: 'images/gallery-24.png', title: '100% Stain & Scratch Removal' },
+    { src: 'images/gallery-22.png', title: 'Diamond Polish Mirror Finish' },
+    { src: 'images/gallery-23.png', title: 'Commercial Marble Restoration' },
+    { src: 'images/gallery-24.png', title: '100% Stain & Scratch Elimination' },
     { src: 'images/gallery-25.png', title: 'Granite Surface Refinishing' },
     { src: 'images/gallery-26.png', title: 'Villa Lobby Mirror Polish' },
-    { src: 'images/gallery-27.png', title: 'Kota Floor Refinishing' },
+    { src: 'images/gallery-27.png', title: 'Kota Stone Floor Care' },
     { src: 'images/gallery-28.png', title: 'Seamless Joint Grinding' },
-    { src: 'images/gallery-29.png', title: 'Dust-Free Diamond Buffing' },
-    { src: 'images/gallery-30.png', title: 'Mirror Shine Residence Floor' },
-    { src: 'images/gallery-31.png', title: 'Luxury Living Room Care' },
-    { src: 'images/gallery-32.png', title: 'Crystallization Treatment' },
-    { src: 'images/gallery-33.png', title: 'High Gloss Protection Shield' },
-    { src: 'images/gallery-34.png', title: 'Italian Marble Restoration' },
-    { src: 'images/gallery-35.png', title: 'High Gloss Mirror Finish' },
-    { src: 'images/gallery-1.png', title: 'Italian Marble Polish' },
-    { src: 'images/gallery-2.png', title: 'Mirror Finish Floor' },
-    { src: 'images/gallery-3.png', title: 'Living Room Marble' },
-    { src: 'images/gallery-4.png', title: 'Staircase Polishing' },
-    { src: 'images/gallery-5.png', title: 'Commercial Hall Floor' },
-    { src: 'images/gallery-6.png', title: 'Granite Gloss Restoration' },
-    { src: 'images/gallery-7.png', title: 'Diamond Polish Finish' },
-    { src: 'images/gallery-8.png', title: 'Villa Flooring Shine' },
-    { src: 'images/gallery-9.png', title: 'Seamless Joint Grinding' },
-    { src: 'images/gallery-10.png', title: 'White Marble Shine' },
-    { src: 'images/gallery-11.png', title: 'High Gloss Buffing' },
-    { src: 'images/gallery-12.png', title: 'Stain Protection Coating' },
-    { src: 'images/gallery-13.png', title: 'Katni Marble Restoration' },
-    { src: 'images/gallery-14.png', title: 'Lobby Floor Polish' },
-    { src: 'images/gallery-15.png', title: 'Reflective Marble Care' }
+    { src: 'images/gallery-29.png', title: 'Dust-Free Heavy Buffing' },
+    { src: 'images/gallery-30.png', title: 'Mirror Shine Residential Hall' },
+    { src: 'images/gallery-31.png', title: 'Luxury Interior Marble Care' },
+    { src: 'images/gallery-32.png', title: 'Crystallization Shine Shield' },
+    { src: 'images/gallery-33.png', title: 'High Gloss Protective Coating' },
+    { src: 'images/gallery-34.png', title: 'Italian White Marble Polish' },
+    { src: 'images/gallery-35.png', title: 'Premium Floor Refinishing' },
+    { src: 'images/gallery-1.png', title: 'Italian Marble Gloss Masterclass' },
+    { src: 'images/gallery-2.png', title: 'Mirror Finish Living Room' },
+    { src: 'images/gallery-3.png', title: 'High Gloss Katni Care' },
+    { src: 'images/gallery-4.png', title: 'Precision Steps Polishing' },
+    { src: 'images/gallery-5.png', title: 'Commercial Hall Shine' },
+    { src: 'images/gallery-6.png', title: 'Granite Floor Buffing' },
+    { src: 'images/gallery-7.png', title: 'Seamless Joint Polish' },
+    { src: 'images/gallery-8.png', title: 'Villa Flooring Restoration' },
+    { src: 'images/gallery-9.png', title: 'Stain Shield Sealant' },
+    { src: 'images/gallery-10.png', title: 'White Marble Buffing' },
+    { src: 'images/gallery-11.png', title: 'High Gloss Diamond Polish' },
+    { src: 'images/gallery-12.png', title: 'Protective Sealer Shield' },
+    { src: 'images/gallery-13.png', title: 'Katni Surface Refinishing' },
+    { src: 'images/gallery-14.png', title: 'Lobby Floor Mirror Care' },
+    { src: 'images/gallery-15.png', title: 'Reflective Marble Restoration' }
 ];
 
 // --- HERO SLIDER DATA (10 Dedicated Hero Pictures) ---
@@ -87,10 +87,13 @@ function renderGalleryGrids() {
                     <img src="${item.src}" alt="${item.title}" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="overlay-content">
-                            <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
-                            <span>${item.title}</span>
+                            <i class="fa-solid fa-expand zoom-icon"></i>
+                            <span>Tap to Zoom</span>
                         </div>
                     </div>
+                </div>
+                <div class="gallery-card-caption">
+                    <span class="gallery-card-title">${item.title}</span>
                 </div>
             </div>
         `).join('');
