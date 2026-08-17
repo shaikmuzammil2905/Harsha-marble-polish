@@ -54,31 +54,15 @@
     <!-- PAGE HERO -->
     <section class="page-banner bg-light">
         <div class="container text-center">
-            <h1 class="page-title">Project Portfolio Gallery</h1>
-            <p class="page-subtitle">Click any box to inspect high-resolution photos in lightbox popup view</p>
+            <h1 class="page-title" style="max-width: 840px; margin: 0 auto 12px; font-weight: 700;">Choosing the right people for your flooring work is crucial.</h1>
+            <p class="page-subtitle" style="font-size: 1.05rem; color: #64748B;">Below are the some of our success stories with written permission for their publication.</p>
         </div>
     </section>
 
-    <!-- GALLERY GRID (15 Dedicated Boxes) -->
+    <!-- GALLERY GRID (All Success Stories & Projects) -->
     <section class="gallery-section section-padding">
         <div class="container">
-            <div class="gallery-grid">
-                <div class="gallery-item reveal-up" onclick="openLightbox(0)"><div class="gallery-img-wrapper"><img src="images/gallery-1.png" alt="Italian Marble Polish"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Italian Marble Polish</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(1)"><div class="gallery-img-wrapper"><img src="images/gallery-2.png" alt="Mirror Finish Floor"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Mirror Finish Floor</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(2)"><div class="gallery-img-wrapper"><img src="images/gallery-3.png" alt="Living Room Marble"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Living Room Marble</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(3)"><div class="gallery-img-wrapper"><img src="images/gallery-4.png" alt="Staircase Polishing"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Staircase Polishing</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(4)"><div class="gallery-img-wrapper"><img src="images/gallery-5.png" alt="Commercial Hall Floor"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Commercial Hall Floor</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(5)"><div class="gallery-img-wrapper"><img src="images/gallery-6.png" alt="Granite Gloss Restoration"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Granite Gloss Restoration</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(6)"><div class="gallery-img-wrapper"><img src="images/gallery-7.png" alt="Diamond Polish Finish"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Diamond Polish Finish</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(7)"><div class="gallery-img-wrapper"><img src="images/gallery-8.png" alt="Villa Flooring Shine"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Villa Flooring Shine</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(8)"><div class="gallery-img-wrapper"><img src="images/gallery-9.png" alt="Seamless Joint Grinding"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Seamless Joint Grinding</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(9)"><div class="gallery-img-wrapper"><img src="images/gallery-10.png" alt="White Marble Shine"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>White Marble Shine</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(10)"><div class="gallery-img-wrapper"><img src="images/gallery-11.png" alt="High Gloss Buffing"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>High Gloss Buffing</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(11)"><div class="gallery-img-wrapper"><img src="images/gallery-12.png" alt="Stain Protection Coating"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Stain Protection Coating</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(12)"><div class="gallery-img-wrapper"><img src="images/gallery-13.png" alt="Katni Marble Restoration"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Katni Marble Restoration</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(13)"><div class="gallery-img-wrapper"><img src="images/gallery-14.png" alt="Lobby Floor Polish"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Lobby Floor Polish</span></div></div></div></div>
-                <div class="gallery-item reveal-up" onclick="openLightbox(14)"><div class="gallery-img-wrapper"><img src="images/gallery-15.png" alt="Reflective Marble Care"><div class="gallery-overlay"><div class="overlay-content"><i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i><span>Reflective Marble Care</span></div></div></div></div>
-            </div>
+            <div class="gallery-grid" id="galleryGridContainer"></div>
         </div>
     </section>
 

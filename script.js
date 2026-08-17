@@ -2,8 +2,28 @@
    HARSHA MARBLE POLISHING SERVICE - MASTER SCRIPT
    ========================================================================== */
 
-// --- GALLERY DATA (15 Dedicated Images) ---
+// --- GALLERY DATA (35 High-Resolution Success Stories & Projects) ---
 const galleryData = [
+    { src: 'images/gallery-16.png', title: 'Mirror Finish Italian Marble' },
+    { src: 'images/gallery-17.png', title: 'High Gloss Hallway Restoration' },
+    { src: 'images/gallery-18.png', title: 'Living Room Marble Buffing' },
+    { src: 'images/gallery-19.png', title: 'Professional Diamond Polishing' },
+    { src: 'images/gallery-20.png', title: 'Staircase Marble Polish' },
+    { src: 'images/gallery-21.png', title: 'Katni Marble Gloss Care' },
+    { src: 'images/gallery-22.png', title: 'Diamond Polish Finish' },
+    { src: 'images/gallery-23.png', title: 'Commercial Marble Floor Polish' },
+    { src: 'images/gallery-24.png', title: '100% Stain & Scratch Removal' },
+    { src: 'images/gallery-25.png', title: 'Granite Surface Refinishing' },
+    { src: 'images/gallery-26.png', title: 'Villa Lobby Mirror Polish' },
+    { src: 'images/gallery-27.png', title: 'Kota Floor Refinishing' },
+    { src: 'images/gallery-28.png', title: 'Seamless Joint Grinding' },
+    { src: 'images/gallery-29.png', title: 'Dust-Free Diamond Buffing' },
+    { src: 'images/gallery-30.png', title: 'Mirror Shine Residence Floor' },
+    { src: 'images/gallery-31.png', title: 'Luxury Living Room Care' },
+    { src: 'images/gallery-32.png', title: 'Crystallization Treatment' },
+    { src: 'images/gallery-33.png', title: 'High Gloss Protection Shield' },
+    { src: 'images/gallery-34.png', title: 'Italian Marble Restoration' },
+    { src: 'images/gallery-35.png', title: 'High Gloss Mirror Finish' },
     { src: 'images/gallery-1.png', title: 'Italian Marble Polish' },
     { src: 'images/gallery-2.png', title: 'Mirror Finish Floor' },
     { src: 'images/gallery-3.png', title: 'Living Room Marble' },
@@ -44,6 +64,7 @@ const WHATSAPP_NUMBER = '916303415748';
 
 // --- INITIALIZATION ---
 document.addEventListener('DOMContentLoaded', () => {
+    renderGalleryGrids();
     initScrollAnimations();
     initStatsCounter();
     initMobileNav();
@@ -53,6 +74,35 @@ document.addEventListener('DOMContentLoaded', () => {
     initTimedPromoPopup();
     initHeroBackgroundVideo();
 });
+
+// --- RENDER DYNAMIC GALLERY GRIDS ---
+function renderGalleryGrids() {
+    const fullContainer = document.getElementById('galleryGridContainer');
+    const homeContainer = document.getElementById('homeGalleryGridContainer');
+
+    const buildHTML = (items) => {
+        return items.map((item, index) => `
+            <div class="gallery-item reveal-up active" onclick="openLightbox(${index})">
+                <div class="gallery-img-wrapper">
+                    <img src="${item.src}" alt="${item.title}" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                            <span>${item.title}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    };
+
+    if (fullContainer) {
+        fullContainer.innerHTML = buildHTML(galleryData);
+    }
+    if (homeContainer) {
+        homeContainer.innerHTML = buildHTML(galleryData);
+    }
+}
 
 // --- HERO BACKGROUND VIDEO AUTOPLAY HANDLER ---
 function initHeroBackgroundVideo() {
