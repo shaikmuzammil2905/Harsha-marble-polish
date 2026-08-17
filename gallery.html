@@ -97,6 +97,38 @@
         </div>
     </div>
 
+    <!-- PROJECT DETAIL MODAL (Read More Content Viewer) -->
+    <div class="project-modal-overlay" id="projectDetailModalOverlay" onclick="closeProjectDetailOnOverlay(event)">
+        <div class="project-modal-card">
+            <button class="project-modal-close" onclick="closeProjectDetailModal()">&times;</button>
+            <div class="project-modal-grid">
+                <div class="project-modal-img-col">
+                    <img id="detailModalImg" src="" alt="Project View">
+                    <div class="project-modal-img-badge" id="detailModalTag">Diamond Polishing</div>
+                </div>
+                <div class="project-modal-info-col">
+                    <span class="detail-subtitle-tag" id="detailModalSubTag">Harsha Marble Service Showcase</span>
+                    <h2 class="detail-title" id="detailModalTitle">Diamond Polishing</h2>
+                    <p class="detail-desc" id="detailModalDetails">Full project description...</p>
+                    <div class="detail-features-box">
+                        <h4><i class="fa-solid fa-wand-magic-sparkles accent-star"></i> Key Service Highlights:</h4>
+                        <ul class="detail-features-list" id="detailModalFeatures">
+                            <!-- Dynamic items -->
+                        </ul>
+                    </div>
+                    <div class="detail-actions">
+                        <button class="btn btn-quote-modal-action" onclick="requestQuoteForCurrentDetail()">
+                            <i class="fa-brands fa-whatsapp"></i> Get Quote via WhatsApp
+                        </button>
+                        <a href="tel:916303415748" class="btn btn-call-modal-action">
+                            <i class="fa-solid fa-phone"></i> Call Service Expert
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- QUOTE MODAL POPUP -->
     <div class="modal-overlay" id="quoteModalOverlay" onclick="closeQuoteModalOnOverlay(event)">
         <div class="modal-card">
