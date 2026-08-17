@@ -51,7 +51,32 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeroSlider();
     initRotatingHeadlines();
     initTimedPromoPopup();
+    initHeroBackgroundVideo();
 });
+
+// --- HERO BACKGROUND VIDEO AUTOPLAY HANDLER ---
+function initHeroBackgroundVideo() {
+    const video = document.querySelector('.hero-bg-video');
+    if (!video) return;
+    
+    // Ensure video is muted and playsinline
+    video.muted = true;
+    video.playsInline = true;
+
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+        playPromise.catch(error => {
+            console.log('Autoplay prevented by browser, retrying on user interaction:', error);
+            const enableVideoPlay = () => {
+                video.play();
+                document.removeEventListener('touchstart', enableVideoPlay);
+                document.removeEventListener('click', enableVideoPlay);
+            };
+            document.addEventListener('touchstart', enableVideoPlay, { once: true });
+            document.addEventListener('click', enableVideoPlay, { once: true });
+        });
+    }
+}
 
 // --- DYNAMIC ROTATING HEADLINE SWITCHER ---
 function initRotatingHeadlines() {
